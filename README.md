@@ -7,3 +7,9 @@
 ### Codeclimate status:
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0fd0b1a22126c0a17a71/maintainability)](https://codeclimate.com/github/execto/backend-project-lvl1/maintainability)
+
+### Demo
+
+brain-even
+
+[![asciicast](https://asciinema.org/a/YLyB9Xz2NLirE8zeF5AUYU4S6.svg)](https://asciinema.org/a/YLyB9Xz2NLirE8zeF5AUYU4S6)
