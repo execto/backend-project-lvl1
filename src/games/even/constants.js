@@ -1,4 +1,4 @@
-export const Answer = {
+export const ANSWER = {
   yes: 'yes',
   no: 'no',
 };
