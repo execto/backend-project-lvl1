@@ -6,7 +6,7 @@ const game = {
   setupQuestion() {
     const leftOperand = makeRandomIntegerNumber();
     const rightOperand = makeRandomIntegerNumber();
-    const operator = OPERATORS[makeRandomIntegerNumber(2)];
+    const operator = OPERATORS[makeRandomIntegerNumber(3)];
     const mathFunc = MATH_FUNCS[operator];
     const rightAnswer = mathFunc(leftOperand, rightOperand);
 
@@ -14,9 +14,6 @@ const game = {
       question: `${leftOperand} ${operator} ${rightOperand}`,
       rightAnswer,
     };
-  },
-  makeWrongAnswerMessage(answer, rightAnswer) {
-    return `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`;
   },
   isAnswerCorrect(answer, rightAnswer) {
     const gamerAnswer = Number(answer.replace(/\s/g, ''));

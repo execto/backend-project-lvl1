@@ -1,10 +1,11 @@
 import { askForAName, getAnswer } from './cli/cli.js';
+import { makeWrongAnswerMessage } from './utils.js';
 
 const MAX_QUESTIONS_COUNT = 3;
 
 const startGame = (game) => {
   const {
-    helloMessage, setupQuestion, isAnswerCorrect, makeWrongAnswerMessage,
+    helloMessage, setupQuestion, isAnswerCorrect,
   } = game;
 
   console.log('Welcome to the Brain Games!');

@@ -13,9 +13,6 @@ const game = {
       rightAnswer,
     };
   },
-  makeWrongAnswerMessage(answer, correctAnswer) {
-    return `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`;
-  },
   isAnswerCorrect(answer, rightAnswer) {
     return answer.toLowerCase().trim() === rightAnswer;
   },
