@@ -9,16 +9,13 @@ const startGame = (game) => {
   } = game;
 
   console.log('Welcome to the Brain Games!');
-
   const gamerName = askForAName();
   console.log(`Hello, ${gamerName}!`);
-
   console.log(helloMessage);
 
   let isGameWon = true;
   let allowNextQuestion = true;
   let questionsCount = 0;
-
   while (allowNextQuestion) {
     questionsCount += 1;
     const { question, rightAnswer } = setupQuestion();
