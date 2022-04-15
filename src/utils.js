@@ -1,13 +1,14 @@
-import { MAX_RANDOM_NUMBER } from './constants.js';
+const MAX_RANDOM_NUMBER = 100;
 
-export const makeRandomIntegerNumber = (...args) => {
-  if (args.length <= 1) {
-    const maxNumber = args[0] ? args[0] : MAX_RANDOM_NUMBER;
-    return Math.floor(Math.random() * maxNumber);
+export const makeRandomIntegerNumber = (firstNum, secondNum) => {
+  if (!secondNum) {
+    const max = firstNum || MAX_RANDOM_NUMBER;
+    return Math.floor(Math.random() * max);
   }
 
-  const [minNumber, maxNumber] = args;
-  return Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+  const minRandomNumber = firstNum;
+  const maxRandomNumber = secondNum;
+  return Math.floor(Math.random() * (maxRandomNumber - minRandomNumber + 1)) + minRandomNumber;
 };
 
 export const makeWrongAnswerMessage = (answer, rightAnswer) => `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`;

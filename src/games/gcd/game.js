@@ -1,5 +1,5 @@
 import { makeRandomIntegerNumber } from '../../utils.js';
-import { findGcd } from './utils.js';
+import findGcd from './utils.js';
 
 const game = {
   helloMessage: 'Find the greatest common divisor of given numbers.',

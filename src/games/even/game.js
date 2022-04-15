@@ -1,6 +1,10 @@
-import { ANSWER } from './constants.js';
-import { isEven } from './utils.js';
+import isEven from './utils.js';
 import { makeRandomIntegerNumber } from '../../utils.js';
+
+const ANSWER = {
+  yes: 'yes',
+  no: 'no',
+};
 
 const game = {
   helloMessage: 'Answer "yes" if the number is even, otherwise answer "no".',

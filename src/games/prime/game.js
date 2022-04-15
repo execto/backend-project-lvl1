@@ -1,6 +1,10 @@
 import { makeRandomIntegerNumber } from '../../utils.js';
-import { ANSWER } from './constants.js';
 import { isPrime } from './utils.js';
+
+export const ANSWER = {
+  yes: 'yes',
+  no: 'no',
+};
 
 const game = {
   helloMessage: 'Answer "yes" if given number is prime. Otherwise answer "no".',

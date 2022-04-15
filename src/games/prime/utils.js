@@ -5,3 +5,5 @@ export const isPrime = (number) => {
 
   return true;
 };
+
+export default isPrime;
